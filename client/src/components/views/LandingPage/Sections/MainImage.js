@@ -11,11 +11,10 @@ function MainImage(props){
         backgroundSize : '100%, cover',
         backgroundPosition : 'center, center',
         width : '100%',
-        display:'flex',
-        alignItems:'flex-end'
+        position : 'relative',
         }}>
             <div>
-                <div style={{position:'relative',maxWidth:'300px',bottom:'2rem',marginLeft :'2rem'}}>
+                <div style={{position:'absolute',maxWidth:'500px',bottom:'2rem',marginLeft :'2rem'}}>
                     <h2 style = {{color : 'white'}}>  {props.title}  </h2>
                     <p style = {{color : 'white', fontSize:'1rem'}}>  {props.text}  </p>
                 </div>
