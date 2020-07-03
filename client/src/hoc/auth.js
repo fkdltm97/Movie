@@ -17,7 +17,7 @@ export default function(SpecificComponent, option, adminRoute = null){
         useEffect(() => {
 
             dispatch(auth()).then(response=>{
-                console.log(response);
+               
                 //로그인 하지 않은 상테
                 if(!response.payload.isAuth){
                     if(option){
@@ -35,7 +35,7 @@ export default function(SpecificComponent, option, adminRoute = null){
             })
         }, [ ])
         return(
-            <SpecificComponent/>
+            <SpecificComponent {...props}/>
         )
 
 
